@@ -1,7 +1,7 @@
 ion-menu ion-content {
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
-
+//Changed all primary colors to medium and deleted anything related to labels. Päivi Lappalainen 1900653
 ion-menu.md ion-content {
   --padding-start: 8px;
   --padding-end: 8px;
@@ -33,15 +33,7 @@ ion-menu.md ion-list#inbox-list ion-list-header {
   min-height: 20px;
 }
 
-ion-menu.md ion-list#labels-list ion-list-header {
-  font-size: 16px;
 
-  margin-bottom: 18px;
-
-  color: #757575;
-
-  min-height: 26px;
-}
 
 ion-menu.md ion-item {
   --padding-start: 10px;
@@ -50,20 +42,18 @@ ion-menu.md ion-item {
 }
 
 ion-menu.md ion-item.selected {
-  --background: rgba(var(--ion-color-primary-rgb), 0.14);
+  --background: rgba(var(--ion-color-medium-rgb), 0.14);
 }
 
 ion-menu.md ion-item.selected ion-icon {
-  color: var(--ion-color-primary);
+  color: var(--ion-color-medium);
 }
 
 ion-menu.md ion-item ion-icon {
   color: #616e7e;
 }
 
-ion-menu.md ion-item ion-label {
-  font-weight: 500;
-}
+
 
 ion-menu.ios ion-content {
   --padding-bottom: 20px;
@@ -85,7 +75,7 @@ ion-menu.ios ion-item {
 }
 
 ion-menu.ios ion-item.selected ion-icon {
-  color: var(--ion-color-primary);
+  color: var(--ion-color-medium);
 }
 
 ion-menu.ios ion-item ion-icon {
@@ -93,9 +83,6 @@ ion-menu.ios ion-item ion-icon {
   color: #73849a;
 }
 
-ion-menu.ios ion-list#labels-list ion-list-header {
-  margin-bottom: 8px;
-}
 
 ion-menu.ios ion-list-header,
 ion-menu.ios ion-note {
@@ -115,5 +102,6 @@ ion-note {
 }
 
 ion-item.selected {
-  --color: var(--ion-color-primary);
+  --color: var(--ion-color-medium);
 }
+

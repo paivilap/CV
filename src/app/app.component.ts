@@ -12,38 +12,41 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
+    //Changed titles and folders and removed icons. PäiviLappalainen 1900653
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
-      icon: 'mail'
+      title: 'My CV',
+      url: '/folder/My CV',
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
-      icon: 'paper-plane'
+      title: 'Profile',
+      url: '/folder/Profile',
     },
     {
-      title: 'Favorites',
-      url: '/folder/Favorites',
-      icon: 'heart'
+      title: 'Technical skills ',
+      url: '/folder/Technical skills',
     },
     {
-      title: 'Archived',
-      url: '/folder/Archived',
-      icon: 'archive'
+      title: 'Soft skills',
+      url: '/folder/Soft skills',
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash'
+      title: 'Personal projects',
+      url: '/folder/Personal projects',
     },
     {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
+      title: 'Team projects',
+      url: '/folder/Team projects',
+    },
+    {
+      title: 'Extra curriculum activities',
+      url: '/folder/Extra',
+    },
+    {
+      title: 'Contact',
+      url: '/folder/Contact',
     }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+ //Removed labels. Päivi Lappalainen 1900653
 
   constructor(
     private platform: Platform,
